@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import NavBar from '../components/NavBar'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -11,61 +11,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <NavBar />
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      <h1> Home </h1>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula neque bibendum nunc tristique facilisis. Donec vel justo vitae enim ornare malesuada. Aliquam erat volutpat. Cras porttitor ultrices enim et pretium. Fusce ac sagittis erat, ut dignissim tellus. Praesent ut ex odio. Curabitur ut aliquet eros. Suspendisse potenti. Duis vitae condimentum velit. Nam in sagittis ante. Phasellus eget rutrum erat, ut consequat ligula. Sed libero dolor, tristique id erat a, tempor auctor ipsum. Fusce tincidunt vitae nisl at pulvinar. Donec ultrices molestie tortor et facilisis. Donec rhoncus metus massa, sit amet cursus velit tempor ut.</p>
+<p>Duis placerat ipsum ac viverra suscipit. Proin vel nisl lectus. In bibendum ipsum nibh, a bibendum lorem tempus ac. Cras porta ante quis sem convallis, id fringilla tellus tincidunt. Mauris pulvinar dictum tincidunt. Vestibulum interdum leo ligula, vitae viverra velit ullamcorper ut. In hendrerit, nibh sit amet euismod aliquam, tortor ante mollis elit, eu varius lectus eros non orci. Curabitur sit amet aliquet nibh, id condimentum urna. Quisque sit amet urna ac erat tincidunt semper. Phasellus id pellentesque mauris, vel vestibulum velit. Proin at elit mollis, vehicula felis id, ultricies lorem. Duis tempor a tellus ultrices egestas. In sed ex eget eros consequat fermentum.</p>
+<p>Vestibulum rutrum ipsum quis condimentum sagittis. Phasellus vel augue eget urna rutrum porttitor. Praesent sit amet interdum ante, eu convallis dui. Nulla ex sapien, gravida in pretium eu, pellentesque et mauris. Etiam sed feugiat justo. Fusce a tempus magna, sed venenatis orci. Donec vehicula nibh libero, a tempor est sagittis id. Curabitur ac nisi ac lorem malesuada sollicitudin at sed urna. Quisque eleifend dui in tortor ultrices, in tempus enim lacinia. Donec lacinia sollicitudin lorem et pretium. Nam placerat, nibh et scelerisque pretium, dui lectus scelerisque velit, id rutrum metus leo vitae metus. Aliquam fringilla id enim at fermentum.</p>
+<p>Nunc venenatis libero vitae interdum eleifend. Nam commodo justo neque, et commodo ante posuere sit amet. Mauris pharetra lorem vitae eros rhoncus, ac lacinia metus molestie. Cras ultricies finibus enim in vulputate. Fusce iaculis lacinia lobortis. Nunc aliquam maximus dolor a rhoncus. Quisque in vestibulum urna. Quisque condimentum porttitor rhoncus. Curabitur cursus molestie lorem in eleifend. In malesuada, justo at ultrices sodales, augue nisi auctor elit, sit amet maximus massa orci in nunc. Pellentesque interdum risus sit amet ultricies scelerisque.</p>
+<p>Aenean pharetra nulla convallis tellus ornare sagittis. Fusce commodo tortor quis augue faucibus gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce eu ex in lacus hendrerit iaculis in a turpis. Sed vitae orci in est dignissim ultrices sed auctor ante. Suspendisse fermentum maximus turpis id pretium. Sed vel velit non sapien efficitur iaculis.</p>
+<p>Aenean porta leo id orci tempor suscipit. Nam orci justo, posuere a neque vitae, vestibulum dictum lorem. Aenean mi urna, lobortis in justo hendrerit, feugiat sollicitudin tellus. Donec tincidunt sagittis iaculis. Pellentesque pulvinar, nulla eu pharetra vulputate, eros orci laoreet nisl, vitae pharetra quam urna ut arcu. Praesent ultrices sit amet libero sed facilisis. Morbi non ante eget lectus dapibus fermentum at et neque. Nulla elementum rutrum ante eget consectetur.</p>
+<p>Sed eget tellus eget augue auctor bibendum non eu nibh. Integer pellentesque ut ex ut pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam iaculis diam neque, quis viverra libero faucibus a. Curabitur ac pharetra lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque malesuada porta tristique. Phasellus dapibus arcu ut aliquet viverra. Nullam malesuada nisl purus, at blandit sapien condimentum in. Duis vel enim sed urna eleifend molestie. Aenean finibus facilisis risus, ut sollicitudin lacus malesuada a.</p>
+<p>Morbi sodales, nibh nec cursus hendrerit, turpis nisi facilisis lorem, nec viverra dolor mi vitae nulla. Vivamus vitae neque nec quam auctor placerat. Praesent mi elit, sollicitudin et ligula non, malesuada posuere nulla. Sed egestas lectus orci. Nullam sit amet sapien libero. Phasellus eu massa fermentum, porttitor ex eget, volutpat nisl. Curabitur non sapien et libero fringilla pulvinar at eu urna.</p>
+<p>Fusce scelerisque, dui eget lobortis posuere, tortor sem aliquam orci, in viverra justo massa ut nisl. Sed faucibus tristique nibh ut condimentum. Integer tincidunt odio a nunc mattis, in sodales nibh semper. Phasellus feugiat diam quis odio venenatis ultrices. Quisque et velit justo. Quisque vel cursus tortor. Nullam sit amet volutpat lectus, sit amet faucibus urna. Cras finibus iaculis consectetur. Sed at vulputate ex. Pellentesque luctus ut arcu quis dignissim.</p>
+<p>Aenean condimentum sit amet tellus et pulvinar. Nam eget iaculis nulla. Morbi sed dolor suscipit tortor elementum ultrices ut convallis est. Nullam eget libero semper, laoreet odio mollis, molestie metus. Nunc ac faucibus libero. Phasellus vel accumsan dolor, sed hendrerit risus. Nulla augue nulla, rhoncus a leo gravida, lobortis commodo est. Aliquam erat volutpat.</p>
     </div>
   )
 }
