@@ -1,4 +1,6 @@
 .navbar {
+    --navbar-bg-color: #00000050;
+    bottom: 0;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -6,27 +8,57 @@
     align-items: center;
     width: 100%;
     height: 4rem;
-    background-color: #00000050;
+    background-color: var(--navbar-bg-color);
+    border-top: var(--accent-color) 0.2rem solid;
+
     box-shadow: 0 1rem 2rem 1rem rgba(0 0 0 / 15%);
     backdrop-filter: blur(0.5rem);
-}
-
-.navbar > .space {
-    width: 3rem
 }
 
 .navbar > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 1.6rem;
     height: 100%;
+    aspect-ratio: 1;
+    margin: 0 0.8rem;
     line-height: 100%;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .navbar > a:hover {
     background-color: #00000020;
+}
+
+.navbar > a.active {
+    background-color: var(--accent-color);
+}
+
+.navbar > a.active::before {
+    content: '';
+    width: 200%;
+    margin-right: -200%;
+    aspect-ratio: 4;
+    position: relative;
+    left: calc(-1.15rem - 50%);
+    top: -25%;
+    z-index: -1;
+
+    mask: url(../public/nav-path.svg) no-repeat 50% 50%;
+    mask-size: cover;
+    background-color: var(--accent-color);
+    /* clip-path: url("#nav-path"); */
+}
+
+.navbar > a > span.icon {
+    font-family: 'Material Icons';
+    font-size: 1.5rem;
+}
+
+.navbar > a > span.legend {
+    opacity: 0;
+    position: absolute;
 }
 
 .spacer {

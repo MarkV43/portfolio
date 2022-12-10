@@ -23,5 +23,6 @@ a {
   body {
     color: white;
     background: #333333;
+    --accent-color: rgb(46, 140, 248);
   }
 }
