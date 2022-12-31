@@ -1,9 +1,89 @@
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 0.95;
+}
+
+.photo svg {
+    margin-top: -3rem;
+    position: absolute;
+    width: 40vw;
+}
+
+.photo svg > path {
+    fill: var(--accent-color);
+}
+
+main.main {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 1rem;
+}
+
+
+.video {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+}
+
+.video video {
+    width: 90%;
+}
+
+.name {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 200;
+    text-align: right;
+    padding-right: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    fill: red;
+}
+
 .about {
-    background: rgba(0 0 0 / 50%);
-    margin: 1rem;
-    padding: 1rem;
-    width: fit-content;
-    /* width: 15rem; */
-    border-radius: 0.4rem;
-    box-shadow: 0.3rem 0.6rem 1rem 0.2rem rgba(0 0 0 / 30%);
+    align-self: flex-start;
+    padding-left: 4rem;
+}
+
+.about h2 {
+    padding-left: 2rem;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    width: 65%;
+    font-size: 1.1rem;
+    line-height: 1.7;
 }

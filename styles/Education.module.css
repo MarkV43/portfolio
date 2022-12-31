@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.timeItem {
+    display: flex;
+    gap: 2rem;
+    --spacing: -1rem;
+}
+
+.timeItem::before {
+    content: "";
+    margin-top: 1.3rem;
+    width: 2rem;
+    height: 2rem;
+    /* aspect-ratio: 200; */
+    border-radius: 50%;
+    border: 0.5rem dashed var(--accent-color);
+}
+
+.timeItem:nth-child(2n+1) {
+    border-color: lime;
+    transform: translate(calc(-50% - var(--spacing) / 2), 0);
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.timeItem:nth-child(2n) {
+    border-color: aqua;
+    transform: translate(calc(50% + var(--spacing) / 2), 0);
+    flex-direction: row;
+}
+
+.timeItem:nth-child(2n+1)::before {
+    margin-left: 1rem;
+    margin-right: -1rem;
+}
+
+.timeItem:nth-child(2n)::before {
+    margin-right: 1rem;
+    margin-left: -1rem;
+}
+
+.timeItem:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    box-sizing: content-box;
+    width: 0;
+    height: 12rem;
+    border-right: 0.5rem dashed var(--accent-color);
+}
+
+.timeItem:not(:last-child):nth-child(2n+1):after {
+    transform: translate(-0.2rem, 4.7rem);
+}
+
+.timeItem:not(:last-child):nth-child(2n):after {
+    transform: translate(0.2rem, 4.7rem);
+}
+
+.timeItem > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timeItem label:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.timeItem img {
+    height: 4rem;
+    filter: drop-shadow(0 0 0.1rem #ffffff44);
+}
