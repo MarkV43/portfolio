@@ -80,7 +80,7 @@ export default function Education() {
                         <label>Computer Networks</label>
                         <label>ENSEEIHT</label>
                         <label>2022 - 2024</label>
-                        <label>Master's</label>
+                        <label>Master&apos;s</label>
                     </div>
                     <Link href="https://www.enseeiht.fr/fr/index.html">
                         <img src="https://upload.wikimedia.org/wikipedia/fr/1/1b/Logo-toulouse-inp-N7.png" />
