@@ -29,8 +29,8 @@ export default function Projects() {
                 <h2>Angle controller</h2>
                 
                 <p>
-                    The goal of the "Control Instrumentation" project is to
-                    use a motor's voltage to stabilize a pendulum at a desired
+                    The goal of the &quot;Control Instrumentation&quot; project is to
+                    use a motor&apos;s voltage to stabilize a pendulum at a desired
                     angle, taking into account any disturbances that may occur.
                     This is achieved by adjusting the voltage based on the
                     desired angle of the pendulum.
