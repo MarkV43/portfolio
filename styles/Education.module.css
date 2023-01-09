@@ -35,7 +35,7 @@
     height: 2rem;
     /* aspect-ratio: 200; */
     border-radius: 50%;
-    border: 0.5rem dashed var(--accent-color);
+    border: 0.5rem solid var(--accent-color);
 }
 
 .timeItem:nth-child(2n+1) {
@@ -66,16 +66,16 @@
     position: absolute;
     box-sizing: content-box;
     width: 0;
-    height: 12rem;
-    border-right: 0.5rem dashed var(--accent-color);
+    height: 13em;
+    border-right: 0.5rem solid var(--accent-color);
 }
 
 .timeItem:not(:last-child):nth-child(2n+1):after {
-    transform: translate(-0.2rem, 4.7rem);
+    transform: translate(-0.25rem, 4.2rem);
 }
 
 .timeItem:not(:last-child):nth-child(2n):after {
-    transform: translate(0.2rem, 4.7rem);
+    transform: translate(0.25rem, 4.2rem);
 }
 
 .timeItem > div {

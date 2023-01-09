@@ -1,0 +1,59 @@
+.main {
+    margin: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main h1 {
+    margin-bottom: 2rem;
+}
+
+.main section {
+    padding: 0 3rem;
+    border-radius: 1rem;
+
+    box-shadow: 0 0 1rem #00000055;
+
+    width: fit-content;
+
+    display: grid;
+    grid-template:
+        "title img" 10vh
+        "desc img" 30vh / auto auto;
+
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.main section h2 {
+    grid-area: title;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.main section p {
+    grid-area: desc;
+    max-width: 20vw;
+    text-align: center;
+}
+
+.main section img,
+.main section video {
+    border-radius: 0.5rem;
+
+    grid-area: img;
+
+    height: 24rem;
+    width: auto;
+}
+
+.main section p a {
+    color: aqua;
+    text-decoration: underline;
+}

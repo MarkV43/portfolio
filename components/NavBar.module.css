@@ -36,7 +36,7 @@
 }
 
 .navbar > a.active::before {
-    content: '';
+    /* content: '';
     width: 200%;
     margin-right: -200%;
     aspect-ratio: 4;
@@ -47,13 +47,24 @@
 
     mask: url(../public/nav-path.svg) no-repeat 50% 50%;
     mask-size: cover;
-    background-color: var(--accent-color);
+    background-color: var(--accent-color); */
     /* clip-path: url("#nav-path"); */
 }
 
 .navbar > a > span.icon {
     font-family: 'Material Icons';
     font-size: 1.5rem;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out,
+        color 50ms ease-in-out;
+}
+
+.navbar > a:hover > span.icon {
+    transform: scale(1.1);
+}
+
+.navbar > a:active > span.icon {
+    color: #aaa;
 }
 
 .navbar > a > span.legend {

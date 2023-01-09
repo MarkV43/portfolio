@@ -12,8 +12,12 @@ export default function NavBar() {
                 <span className={styles.legend}>Home</span>
             </Link>
             <Link href="/education" className={router.asPath == '/education' ? styles.active : null}>
-                <span className={styles.icon}>menu_book</span>
+                <span className={styles.icon}>school</span>
                 <span className={styles.legend}>Education</span>
+            </Link>
+            <Link href="/projects" className={router.asPath == '/projects' ? styles.active : null}>
+                <span className={styles.icon}>construction</span>
+                <span className={styles.legend}>Projects</span>
             </Link>
             <Link href="/contact" className={router.asPath == '/contact' ? styles.active : null}>
                 <span className={styles.icon}>call</span>
