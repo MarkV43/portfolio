@@ -1,12 +1,20 @@
+import Head from "next/head";
 import Link from "next/link";
 import NavBar from "../components/NavBar";
+import { useIntl } from "../lib/intl-context";
 import styles from "../styles/Contact.module.css";
 
 
 export default function Contact() {
+    const intl = useIntl();
+
     return <>
+        <Head>
+            <title>{intl.get("contact.title")}</title>
+        </Head>
+
         <div className={styles.container}>
-            <h1 className={styles.title}>Contact me</h1>
+            <h1 className={styles.title}>{intl.get("contact.title")}</h1>
             <div className={styles.social}>
                 <Link href="https://github.com/MarkV43">
                     <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
@@ -22,7 +30,7 @@ export default function Contact() {
                 </Link>
             </div>
 
-            <h2 className={styles.hesitate}>Do not hesitate, I speak these languages:</h2>
+            <h2 className={styles.hesitate}>{intl.get("contact.hesitate")}</h2>
 
             <div className={styles.languages}>
                 <div className={styles.flag}>
@@ -47,6 +55,7 @@ export default function Contact() {
                 </div>
             </div>
         </div>
+        
         <NavBar />
     </>
 }

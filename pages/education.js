@@ -4,6 +4,8 @@ import styles from "../styles/Education.module.css";
 
 
 export default function Education() {
+    // const intl = useIntl();
+
     return <>
         <div className={styles.container}>
             <h1>Academic History</h1>

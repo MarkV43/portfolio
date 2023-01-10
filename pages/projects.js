@@ -3,63 +3,54 @@ import NavBar from "../components/NavBar";
 import styles from "../styles/Projects.module.css";
 import greenGoblinImg from "../public/green-goblin.png";
 import Link from "next/link";
+import Head from "next/head";
+import { useIntl } from "../lib/intl-context";
 
 
 export default function Projects() {
+    const intl = useIntl();
+
     return <>
+        <Head>
+            <title>{intl.get("projects.title")}</title>
+        </Head>
+
         <main className={styles.main}>
-            <h1>Projects</h1>
+            <h1>{intl.get("projects.title")}</h1>
             
             <section>
-                <h2>Green Goblin</h2>
+                <h2>{intl.get("projects.green-goblin.title")}</h2>
                 
                 <p>
-                    A tile-based puzzle game designed and developed by me and
-                    my girlfriend, where you are attached to a weight and must
-                    manage your way to the end of each level, each and everyone
-                    with challenges and new things to make your life even harder!
+                    {intl.get("projects.green-goblin.description")}
                     <br/><br/>
-                    <Link href="https://github.com/GabyV43/green-goblin">GitHub repository</Link>
+                    <Link href="https://github.com/GabyV43/green-goblin">{intl.get("github-repository")}</Link>
                 </p>
 
                 <Image src={greenGoblinImg} />
             </section>
 
             <section>
-                <h2>Angle controller</h2>
+                <h2>{intl.get("projects.angle-controller.title")}</h2>
                 
-                <p>
-                    The goal of the &quot;Control Instrumentation&quot; project is to
-                    use a motor&apos;s voltage to stabilize a pendulum at a desired
-                    angle, taking into account any disturbances that may occur.
-                    This is achieved by adjusting the voltage based on the
-                    desired angle of the pendulum.
-                </p>
+                <p>{intl.get("projects.angle-controller.description")}</p>
 
                 <video controls muted>
-                    <source src="instrumentation.mp4" type="video/mp4"/>
+                    <source src="/videos/instrumentation.mp4" type="video/mp4"/>
                 </video>
             </section>
 
             <section>
-                <h2>Controller through Network</h2>
+                <h2>{intl.get("projects.angle-controller.title")}</h2>
                 
                 <p>
-                    The work, implemented in Python, consists of three stations
-                    (a simulator, a controller, and a control panel) that communicate
-                    with each other. The control panel sends data to change control
-                    parameters in the controller through TCP. The controller consists
-                    of a discrete control system that interacts with the simulator
-                    via UDP. The simulator shows a faithful representation of the
-                    real system to the user and also sends the current state to the
-                    controller via UDP.
-
+                    {intl.get("projects.angle-controller.description")}
                     <br/><br/>
-                    <Link href="https://github.com/MarkV43/tcp-udp">GitHub repository</Link>
+                    <Link href="https://github.com/MarkV43/tcp-udp">{intl.get("github-repository")}</Link>
                 </p>
 
                 <video controls muted>
-                    <source src="tcp-udp.mp4" type="video/mp4"/>
+                    <source src="/videos/tcp-udp.mp4" type="video/mp4"/>
                 </video>
             </section>
         </main>

@@ -1,5 +1,23 @@
 ,en,pt,fr,de,es
 name,Marcelo Vogt,Marcelo Vogt,Marcelo Vogt,Marcelo Vogt,Marcelo Vogt
-title_home,Marcelo Vogt,Marcelo Vogt,Marcelo Vogt,Marcelo Vogt,Marcelo Vogt
-title_education,Academic History,Histórico Acadêmico,,,
-title_contact,Contact me,Fale comigo,Contactez-moi,,
+first-name,Marcelo,Marcelo,Marcelo,Marcelo,Marcelo
+last-name,Vogt,Vogt,Vogt,Vogt,Vogt
+home.title,Home,Início,Accueil,Startseite,Inicio
+education.title,Academic History,Histórico Acadêmico,Parcours Académique,Akademisches Werdegang,Historial Académico
+projects.title,My Projects,Meus Projetos,Mes Projets,Meine Projekte,Mis Proyectos
+contact.title,Contact me,Fale comigo,Contactez-moi,Kontaktieren Sie mich,Contactar conmigo
+home.tab,Home,Início,Accueil,Startseite,Inicio
+education.tab,Experience,Experiência,Expérience,Erfahrung,Experiencia
+projects.tab,Projects,Projetos,Projets,Projekte,Proyectos
+contact.tab,Contact,Contato,Contact,Kontakt,Contacto
+home.about-me,About Me,Sobre Mim,À propos de moi,Über mich,Acerca de mí
+home.description,"I am passionate about puzzles, maths and technology. I strive to use everything I learn to make technology more accessible to everyone, while making the most of it. I love being proposed new challenges and learning new things.","Sou apaixonado por quebra-cabeças, matemática e tecnologia. Busco usar tudo o que aprendo para tornar a tecnologia mais acessível para todos, ao mesmo tempo em que aproveito ao máximo. Adoro ser desafiado com novos desafios e aprender coisas novas.","Je suis passionné par les énigmes, les mathématiques et la technologie. Je m'efforce d'utiliser tout ce que j'apprends pour rendre la technologie plus accessible à tous, tout en en tirant le meilleur parti. J'aime être confronté à de nouveaux défis et apprendre de nouvelles choses.","Ich bin leidenschaftlich über Rätsel, Mathematik und Technologie. Ich bemühe mich, alles, was ich lerne, zu nutzen, um die Technologie für alle zugänglicher zu machen und das Beste daraus zu machen. Ich liebe es, neue Herausforderungen vorgeschlagen zu bekommen und Neues zu lernen.","Soy apasionado por los rompecabezas, las matemáticas y la tecnología. Me esfuerzo por usar todo lo que aprendo para hacer que la tecnología sea más accesible para todos, al mismo tiempo que saco el mayor provecho de ella. Me encanta ser propuesto nuevos desafíos y aprender cosas nuevas."
+video-not-supported,Your browser does not support videos,,,,
+projects.green-goblin.title,Green Goblin,,,,
+projects.green-goblin.description,"A tile-based puzzle game designed and developed by me and my girlfriend, where you are attached to a weight and must manage your way to the end of each level, each and everyone with challenges and new things to make your life even harder!",,,,
+projects.angle-controller.title,Angle Controller,,,,
+projects.angle-controller.description,"The goal of the “Control Instrumentation” project is to use a motor’s voltage to stabilize a pendulum at a desired angle, taking into account any disturbances that may occur. This is achieved by adjusting the voltage based on the desired angle of the pendulum.",,,,
+projects.network-controller.title,Controller through Network,,,,
+projects.network-controller.description,"The work, implemented in Python, consists of three stations (a simulator, a controller, and a control panel) that communicate with each other. The control panel sends data to change control parameters in the controller through TCP. The controller consists of a discrete control system that interacts with the simulator via UDP. The simulator shows a faithful representation of the real system to the user and also sends the current state to the controller via UDP.",,,,
+github-repository,GitHub repository,,,,
+contact.hesitate,"Do not hesitate, I speak these languages:",,,,

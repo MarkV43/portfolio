@@ -1,3 +1,24 @@
 {
-    "page.home.head.title": "Marcelo Vogt"
+	"name": "Marcelo Vogt",
+	"first-name": "Marcelo",
+	"last-name": "Vogt",
+	"home.title": "Home",
+	"education.title": "Academic History",
+	"projects.title": "My Projects",
+	"contact.title": "Contact me",
+	"home.tab": "Home",
+	"education.tab": "Experience",
+	"projects.tab": "Projects",
+	"contact.tab": "Contact",
+	"home.about-me": "About Me",
+	"home.description": "I am passionate about puzzles, maths and technology. I strive to use everything I learn to make technology more accessible to everyone, while making the most of it. I love being proposed new challenges and learning new things.",
+	"video-not-supported": "Your browser does not support videos",
+	"projects.green-goblin.title": "Green Goblin",
+	"projects.green-goblin.description": "A tile-based puzzle game designed and developed by me and my girlfriend, where you are attached to a weight and must manage your way to the end of each level, each and everyone with challenges and new things to make your life even harder!",
+	"projects.angle-controller.title": "Angle Controller",
+	"projects.angle-controller.description": "The goal of the “Control Instrumentation” project is to use a motor’s voltage to stabilize a pendulum at a desired angle, taking into account any disturbances that may occur. This is achieved by adjusting the voltage based on the desired angle of the pendulum.",
+	"projects.network-controller.title": "Controller through Network",
+	"projects.network-controller.description": "The work, implemented in Python, consists of three stations (a simulator, a controller, and a control panel) that communicate with each other. The control panel sends data to change control parameters in the controller through TCP. The controller consists of a discrete control system that interacts with the simulator via UDP. The simulator shows a faithful representation of the real system to the user and also sends the current state to the controller via UDP.",
+	"github-repository": "GitHub repository",
+	"contact.hesitate": "Do not hesitate, I speak these languages:"
 }

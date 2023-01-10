@@ -1,3 +1,24 @@
 {
-    "page.home.head.title": "French Marcelo Vogt"
+	"name": "Marcelo Vogt",
+	"first-name": "Marcelo",
+	"last-name": "Vogt",
+	"home.title": "Accueil",
+	"education.title": "Parcours Académique",
+	"projects.title": "Mes Projets",
+	"contact.title": "Contactez-moi",
+	"home.tab": "Accueil",
+	"education.tab": "Expérience",
+	"projects.tab": "Projets",
+	"contact.tab": "Contact",
+	"home.about-me": "À propos de moi",
+	"home.description": "Je suis passionné par les énigmes, les mathématiques et la technologie. Je m'efforce d'utiliser tout ce que j'apprends pour rendre la technologie plus accessible à tous, tout en en tirant le meilleur parti. J'aime être confronté à de nouveaux défis et apprendre de nouvelles choses.",
+	"video-not-supported": null,
+	"projects.green-goblin.title": null,
+	"projects.green-goblin.description": null,
+	"projects.angle-controller.title": null,
+	"projects.angle-controller.description": null,
+	"projects.network-controller.title": null,
+	"projects.network-controller.description": null,
+	"github-repository": null,
+	"contact.hesitate": null
 }
