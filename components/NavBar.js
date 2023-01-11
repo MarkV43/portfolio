@@ -33,7 +33,7 @@ export default function NavBar() {
                 <div className={styles.popup}>
                     {langs.map((x) => 
                         <Link key={x} href={router.basePath} locale={x}>
-                            <img className={x == locale ? 'active' : null}
+                            <img className={x == locale ? styles.active : null}
                                 src={`/icons/${x}.png`} />
                         </Link>
                     )}
