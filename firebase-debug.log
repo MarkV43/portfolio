@@ -106,3 +106,18 @@
     at async deploy (/home/mark/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2023-01-10T23:49:09.088Z] ----------------------------------------------------------------------
+[debug] [2023-01-10T23:49:09.089Z] Command:       /usr/local/bin/firebase /home/mark/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-01-10T23:49:09.089Z] CLI Version:   11.17.0
+[debug] [2023-01-10T23:49:09.089Z] Platform:      linux
+[debug] [2023-01-10T23:49:09.089Z] Node Version:  v16.16.0
+[debug] [2023-01-10T23:49:09.092Z] Time:          Wed Jan 11 2023 00:49:09 GMT+0100 (Central European Standard Time)
+[debug] [2023-01-10T23:49:09.093Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-10T23:49:09.095Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-01-10T23:49:09.167Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-10T23:49:09.168Z] > authorizing via signed-in user (marcelovogt43@gmail.com)
+[debug] [2023-01-10T23:49:09.168Z] [iam] checking project markv43-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-10T23:49:09.169Z] > refreshing access token with scopes: []
+[debug] [2023-01-10T23:49:09.170Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-01-10T23:49:09.170Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]

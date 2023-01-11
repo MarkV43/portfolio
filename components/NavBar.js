@@ -8,8 +8,6 @@ export default function NavBar() {
     const router = useRouter();
     const { locale } = router;
 
-    console.log({langs});
-
     return <>
         <nav className={styles.navbar}>
             <div className={styles.buttons}>
@@ -34,7 +32,7 @@ export default function NavBar() {
                 <img src={`/icons/${locale}.png`} />
                 <div className={styles.popup}>
                     {langs.map((x) => 
-                        <Link href={router.basePath} locale={x}>
+                        <Link key={x} href={router.basePath} locale={x}>
                             <img className={x == locale ? 'active' : null}
                                 src={`/icons/${x}.png`} />
                         </Link>
