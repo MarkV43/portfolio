@@ -121,3 +121,100 @@
 [debug] [2023-01-10T23:49:09.169Z] > refreshing access token with scopes: []
 [debug] [2023-01-10T23:49:09.170Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
 [debug] [2023-01-10T23:49:09.170Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-12T13:07:07.076Z] ----------------------------------------------------------------------
+[debug] [2023-01-12T13:07:07.077Z] Command:       /usr/local/bin/firebase /home/mark/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-01-12T13:07:07.077Z] CLI Version:   11.17.0
+[debug] [2023-01-12T13:07:07.077Z] Platform:      linux
+[debug] [2023-01-12T13:07:07.077Z] Node Version:  v16.16.0
+[debug] [2023-01-12T13:07:07.080Z] Time:          Thu Jan 12 2023 14:07:07 GMT+0100 (Central European Standard Time)
+[debug] [2023-01-12T13:07:07.080Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-12T13:07:07.082Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-01-12T13:07:07.131Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T13:07:07.131Z] > authorizing via signed-in user (marcelovogt43@gmail.com)
+[debug] [2023-01-12T13:07:07.131Z] [iam] checking project markv43-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-12T13:07:07.132Z] > refreshing access token with scopes: []
+[debug] [2023-01-12T13:07:07.132Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-01-12T13:07:07.132Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-12T13:07:07.258Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-01-12T13:07:07.258Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-12T13:07:07.266Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions [none]
+[debug] [2023-01-12T13:07:07.266Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions x-goog-quota-user=projects/markv43-portfolio
+[debug] [2023-01-12T13:07:07.266Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-12T13:07:07.390Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-01-12T13:07:07.390Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-01-12T13:07:07.932Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions 200
+[debug] [2023-01-12T13:07:07.932Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-12T13:07:07.934Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/markv43-portfolio [none]
+[debug] [2023-01-12T13:07:08.226Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/markv43-portfolio 200
+[debug] [2023-01-12T13:07:08.227Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/markv43-portfolio {"projectId":"markv43-portfolio","projectNumber":"523071464950","displayName":"Portfolio","name":"projects/markv43-portfolio","resources":{"hostingSite":"markv43-portfolio"},"state":"ACTIVE","etag":"1_489500e3-24a2-4356-9167-d429948c576f"}
+[debug] [2023-01-12T13:07:28.994Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at Object.execSync (node:child_process:899:15)
+    at execSync (pkg/prelude/bootstrap.js:2115:30)
+    at prepareFrameworks (/home/mark/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:329:42)
+    at async deploy (/home/mark/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-04-07T23:23:09.717Z] ----------------------------------------------------------------------
+[debug] [2023-04-07T23:23:09.718Z] Command:       /usr/local/bin/firebase /home/mark/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-04-07T23:23:09.718Z] CLI Version:   11.17.0
+[debug] [2023-04-07T23:23:09.718Z] Platform:      linux
+[debug] [2023-04-07T23:23:09.718Z] Node Version:  v16.16.0
+[debug] [2023-04-07T23:23:09.721Z] Time:          Sat Apr 08 2023 01:23:09 GMT+0200 (Central European Summer Time)
+[debug] [2023-04-07T23:23:09.722Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-07T23:23:09.723Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-04-07T23:23:09.776Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-07T23:23:09.776Z] > authorizing via signed-in user (marcelovogt43@gmail.com)
+[debug] [2023-04-07T23:23:09.777Z] [iam] checking project markv43-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-07T23:23:09.777Z] > refreshing access token with scopes: []
+[debug] [2023-04-07T23:23:09.778Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-04-07T23:23:09.778Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-07T23:23:09.887Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-04-07T23:23:09.887Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-07T23:23:09.896Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions [none]
+[debug] [2023-04-07T23:23:09.896Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions x-goog-quota-user=projects/markv43-portfolio
+[debug] [2023-04-07T23:23:09.896Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-07T23:23:10.050Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-04-07T23:23:10.050Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-04-07T23:23:10.543Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions 200
+[debug] [2023-04-07T23:23:10.543Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-07T23:23:10.544Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/markv43-portfolio [none]
+[debug] [2023-04-07T23:23:10.800Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/markv43-portfolio 200
+[debug] [2023-04-07T23:23:10.800Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/markv43-portfolio {"projectId":"markv43-portfolio","projectNumber":"523071464950","displayName":"Portfolio","name":"projects/markv43-portfolio","resources":{"hostingSite":"markv43-portfolio"},"state":"ACTIVE","etag":"1_489500e3-24a2-4356-9167-d429948c576f"}
+[debug] [2023-04-07T23:23:31.064Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at Object.execSync (node:child_process:899:15)
+    at execSync (pkg/prelude/bootstrap.js:2115:30)
+    at prepareFrameworks (/home/mark/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:329:42)
+    at async deploy (/home/mark/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-04-07T23:23:56.862Z] ----------------------------------------------------------------------
+[debug] [2023-04-07T23:23:56.863Z] Command:       /usr/local/bin/firebase /home/mark/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-04-07T23:23:56.864Z] CLI Version:   11.17.0
+[debug] [2023-04-07T23:23:56.864Z] Platform:      linux
+[debug] [2023-04-07T23:23:56.864Z] Node Version:  v16.16.0
+[debug] [2023-04-07T23:23:56.864Z] Time:          Sat Apr 08 2023 01:23:56 GMT+0200 (Central European Summer Time)
+[debug] [2023-04-07T23:23:56.864Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-07T23:23:56.918Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-07T23:23:56.918Z] > authorizing via signed-in user (marcelovogt43@gmail.com)
+[debug] [2023-04-07T23:23:56.919Z] [iam] checking project markv43-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-07T23:23:56.921Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions [none]
+[debug] [2023-04-07T23:23:56.921Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions x-goog-quota-user=projects/markv43-portfolio
+[debug] [2023-04-07T23:23:56.921Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-07T23:23:57.584Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions 200
+[debug] [2023-04-07T23:23:57.585Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/markv43-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-07T23:23:57.586Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/markv43-portfolio [none]
+[debug] [2023-04-07T23:23:57.809Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/markv43-portfolio 200
+[debug] [2023-04-07T23:23:57.810Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/markv43-portfolio {"projectId":"markv43-portfolio","projectNumber":"523071464950","displayName":"Portfolio","name":"projects/markv43-portfolio","resources":{"hostingSite":"markv43-portfolio"},"state":"ACTIVE","etag":"1_489500e3-24a2-4356-9167-d429948c576f"}
+[debug] [2023-04-07T23:24:14.698Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at Object.execSync (node:child_process:899:15)
+    at execSync (pkg/prelude/bootstrap.js:2115:30)
+    at prepareFrameworks (/home/mark/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:329:42)
+    at async deploy (/home/mark/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.

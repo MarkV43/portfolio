@@ -27,14 +27,20 @@ export default function NavBar() {
                     <span className={styles.icon}>call</span>
                     <span className={styles.legend}>Contact</span>
                 </Link>
+                <Link href="/interview" className={router.asPath == '/interview' ? styles.active : null}>
+                    <span className={styles.icon}>support_agent</span>
+                    <span className={styles.legend}>Interview</span>
+                </Link>
             </div>
             <div className={styles.languageSelect}>
-                <img src={`/icons/${locale}.png`} />
+                <Image src={`/icons/${locale}.png`} alt={locale} width={500} height={500} />
                 <div className={styles.popup}>
                     {langs.map((x) => 
                         <Link key={x} href={router.basePath} locale={x}>
-                            <img className={x == locale ? styles.active : null}
-                                src={`/icons/${x}.png`} />
+                            <Image className={x == locale ? styles.active : null}
+                                src={`/icons/${x}.png`}
+                                alt={x}
+                                width={500} height={500} />
                         </Link>
                     )}
                 </div>

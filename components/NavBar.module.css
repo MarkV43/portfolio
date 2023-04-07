@@ -86,8 +86,8 @@
 
 .languageSelect > img {
     height: calc(4rem - 0.2rem);
+    width: calc(4rem - 0.2rem);
     padding: 0.5rem;
-    aspect-ratio: 1;
     transition: transform 200ms ease-in-out;
 }
 
@@ -119,7 +119,7 @@
 
 .languageSelect .popup img {
     width: calc(3.5rem);
-    aspect-ratio: 1;
+    height: calc(3.5rem);
     cursor: pointer;
     border-radius: 50%;
 
@@ -130,9 +130,4 @@
 .languageSelect .popup img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 0.3rem #00000044;
-}
-
-.languageSelect .popup img.active {
-    border: 0.2rem solid var(--accent-color);
-    box-sizing: border-box;
 }

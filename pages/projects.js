@@ -41,10 +41,10 @@ export default function Projects() {
             </section>
 
             <section>
-                <h2>{intl.get("projects.angle-controller.title")}</h2>
+                <h2>{intl.get("projects.network-controller.title")}</h2>
                 
                 <p>
-                    {intl.get("projects.angle-controller.description")}
+                    {intl.get("projects.network-controller.description")}
                     <br/><br/>
                     <Link href="https://github.com/MarkV43/tcp-udp">{intl.get("github-repository")}</Link>
                 </p>

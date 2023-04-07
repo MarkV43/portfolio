@@ -2,7 +2,7 @@ import pandas as pd
 from math import isnan
 
 def main():
-    df = pd.read_csv('all.csv')
+    df = pd.read_excel('all.ods', engine="odf")
 
     f = open("langs.json", "w+")
     f.write('{}'.format(str(list(df.columns[1:])).replace("'", '"')))
@@ -18,7 +18,7 @@ def main():
             if type(v) is float and isnan(v):
                 v = 'null'
             else:
-                v = '"{}"'.format(v)
+                v = '"{}"'.format(v.replace('"', '\\"'))
             f.write(
                 '\n\t"{}": {}'
                     .format(

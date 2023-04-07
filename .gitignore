@@ -6,6 +6,9 @@
 .pnp.js
 .*
 !/.github
+!.eslintrc
+!.firebaserc
+*.log
 
 # testing
 /coverage
